@@ -30,3 +30,9 @@ token_id = lm_head_output[0,-1].argmax(-1)
 output = tokenizer.decode(token_id)
 
 print(output)
+
+dimension = model_output[0].shape
+print(dimension)
+
+LMhead = lm_head_output.shape
+print(LMhead)
