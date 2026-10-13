@@ -39,5 +39,5 @@ def print_recommendations(song_id):
      similar_songs = np.array( model.wv.most_similar(positive=str(song_id),topn=5) )[:,0]
      return  songs_df.iloc[similar_songs] 
 
-# Extract recommendations 
+# Extract and print recommendations 
 print(print_recommendations(2172))
